@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.site-container{
+    display: flex;
+    justify-content: center;
+    width: 115px;
+    margin: 0 auto;
+    right: 50px;
+}
+@media (max-width: 1250px){
+    .site-container{
+        width: 90%;
+    }
+}
+.navigation{
+    position: absolute;
+    top: 4.6%;
+    width: 100%;
+    z-index: 2;
+}
+.navigation-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-navigation{
+    /*color: #308FAD;*/
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background: black;
+    /*opacity: .9;*/
+}
+.main-navigation-ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3%;
+    border: 2px solid #fff;
+    border-radius: 7px;
+    background-color: #D5B7A0;
+}
+
+.main-navigation .main-navigation-ul li{
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.main-navigation .main-navigation-ul a{
+    color: #308FAD;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0,3s;
+}
+
+.main-navigation .main-navigation-ul a:hover{
+    color:#0D334F;
+}
+.burguer-cnt{
+    cursor: pointer;
+    z-index: 3;
+}
+.bar1, .bar2, .bar3{
+     width: 30px;
+     height: 3px;
+     background-color: #53AFBB;
+     margin: 6px 0;
+     transition: 0.4s;
+}
+
+.change .bar1{
+    transform: rotate(-45deg) translate(-6px, 6px);
+    background-color: #53AFBB;
+}
+
+.change .bar2{
+    opacity: 0;
+    background-color: #53AFBB;
+}
+
+.change .bar3{
+    transform: rotate(45deg) translate(-6pc, -7px);
+    background-color: #53AFBB;
+}
+
+.section-top-banner{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://abglt.org.br/wp-content/uploads/2020/10/wallpaper-pc1-scaled.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.section-top-banner:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.section-top-banner .site-container{
+    position: relative;
+    z-index: 1;
+}
+.top-banner__inner{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    /*right: 105px; /*Não entendi pq não ficava centralizado direito */
+}
+
+.top-banner__inner .top-banner__text{
+    margin-left: auto;
+}
+
+/*.top-banner__text-up{
+    right: 105px;
+}*/
+
+.top-banner__inner .top-banner__span{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 30px;
+    position: left;
+}
+
+.top-banner__inner .top-banner__h2{ /*Pq coloca o .top-banner__inner?*/
+   font-family: sans-serif;
+   /*min-height: 150px;*/
+   white-space: pre;
+   font-size: 70px;
+   letter-spacing: 3px;
+   color: white;
+   position: center;
+   height: 30vh;
+}
+
+.top-banner__inner .top-banner__image{
+    font-size: 0;
+}
+
+.top-banner__inner .top-banner__text-p{
+    display: inline-block;
+    font-family: sans-serif;
+    white-space: normal;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2px;
+    height: 30vh;
+    vertical-align: top;
+    width: 170%;
+}
+
+.a-button{
+    font-family: sans-serif, monospace;
+    font-weight: bold; /*Deixa o texto em negrito*/
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px; /*Deixa a borda arredondada */
+    transition: 0.3s ease; /*Transição com o hover?*/
+    background-color: white; /*Fundo do botao*/
+    width: 10rem;
+    max-width: 10rem;
+    padding: .7rem .8rem;
+    margin: 2rem auto; /*Margem entre botão e outros elementos do site*/
+    background: #0D334F;
+    background: linear-gradient(0deg, #0D334F 0%, #308FAD 100%);
+    border: none;
+    cursor: pointer;
+}
+
+.a-button:hover, .a-button:focus{
+    background: #308FAD;
+    background: linear-gradient(0deg, #308FAD 0%, #53AFBB 100%);
+}
+

@@ -1,0 +1,208 @@
+header{
+    background-color: #EED6D3;
+    padding: 20px 0;
+}
+
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #ABA1F5;
+    font-weight: bold;
+    font-family: sans-serif, monospace;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+main{
+    background-color: #F9F1F0;
+}
+
+nav a:hover{
+    color: #BC3EC6;
+    text-decoration: underline;
+}
+
+.produtos{
+    background-color: #F9F1F0;
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: #ABA1F5;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 6px;
+    box-shadow: 10px 10px 5px 20px white;
+}
+
+.produtos li:hover{
+    border-color: #BC3EC6;
+}
+
+.produtos li:hover h2{
+    font-size: 35px;
+}
+
+.produtos li:active{
+    border-color: #76B8FB;
+}
+
+.produtos h2{
+    color: #67595E;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produtos h2:before{
+    content: "❋";
+}
+
+.produtos h2:after{
+    content: "⁕";
+}
+
+.produtos img{
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+.produto-descricao{
+    color: #A49393;
+    font-size: 18px;
+}
+
+.produto-preco{
+    color: #67595E;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer img{
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+.copyright{
+    color: #ABA1F5;
+    font-size: 19px;
+    margin-top: 20px;
+}
+
+main{
+    font-family: sans-serif, monospace;
+    width: 940px;
+    margin: 0 auto;
+    background-color: #F9F1F0;
+}
+
+form{
+    margin: 40px 0;
+    background-color: #F9F1F0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: #B55FDE;
+    background: linear-gradient(0deg, #B55FDE 0%, #BC3EC6 100%);
+    color: white;
+    margin: 2rem auto;
+    margin: 2rem auto;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    padding: .7rem .8rem;
+    margin: 2rem auto; 
+    transition: 0.3s ease; 
+    cursor: pointer;
+}
+
+.enviar:hover, .enviar:focus{
+    background: #BC3EC6;
+    background: linear-gradient(0deg, #BC3EC6 0%, #D8A7B1 100%);
+    transform: scale(1.2);
+}
+
+table{
+    margin:20px 0 40px;
+}
+
+thead{
+    font-family: sans-serif, monospace;
+    background: #BC3EC6;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    font-family: sans-serif, monospace;
+    border: 1px solid #B55FDE;
+    padding: 8px 15px;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .produtos{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position:static;
+        width: auto;
+    }
+}

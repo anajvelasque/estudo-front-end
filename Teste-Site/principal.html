@@ -1,0 +1,48 @@
+<html>
+    <!DOCTYPE html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style-home.css"/>
+    </head>
+    
+    <body>
+        <!-- Navegacao -->
+        <nav class="navigation">
+            <div class="navigation-inner site-container">
+                <div class="main-navigation">
+                    <ul class="main-navigation-ul">
+                        <li><a href="principal.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li> 
+                    </ul>
+                </div>
+                <div id="btnBurguer" class="burguer-cnt" onclick="menuFn(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <script>
+                    function menuFn(x){
+                        x.classList.toggle("change");
+                    }
+                </script>
+            </div>
+        </nav>
+        <section class="section-top-banner">
+            <div class = "top-banner__inner site-container">
+                <div class = "top-banner__text">
+                    <div class = "top-banner__text-up">
+                        <span class = "top-banner__span">Você está na Terra: </span>
+                        <h2 class = "top-banner__h2">Bem-vindo!</h2>
+                    </div>
+                    <p class = "top-banner__text-p">"I Don't Know How I'll Feel When I'm Dead, But I Don't Want To Regret The Way I Lived." -Yuji Itadori</p>
+                    <a href="https://www.youtube.com/" class="a-button" style="align-items: center;">Leia Mais</a>
+                </div>
+            </div>
+        </section>
+        <script src="js/JQuery/jquery-3.6.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
